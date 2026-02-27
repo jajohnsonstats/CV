@@ -1,0 +1,43 @@
+\ProvidesPackage{cvstyle}
+
+%% ---------------------------- PACKAGES ----------------------------
+\usepackage[margin=1in]{geometry} 
+\usepackage{hyperref} 
+\usepackage{titlesec} 
+\usepackage{enumitem} 
+\usepackage{setspace} 
+
+
+%% --------------------------- FORMATTING ---------------------------
+%% Page and paragraph settings
+\pagestyle{empty}             % Remove page numbers
+\setlength{\parindent}{0pt}   % Remove paragraph indentation
+\setstretch{1.2}              % Set line spacing
+\setlist[itemize]{            % Custom list spacing
+	leftmargin=3.5em, 
+	noitemsep, 
+	topsep=2pt, 
+	parsep=2pt
+}   
+
+
+%% Clickable link options
+\hypersetup{                 
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=blue,
+}
+
+%% Section header formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{14pt}{12pt}
+
+
+%% ------------------------ CUSTOM COMMANDS -------------------------
+%% Command to bold my name in citations
+\newcommand{\me}[1]{\textbf{#1}}
+
+%% Custom indent tab
+\newcommand{\tab}{\hspace*{15pt}}
+
