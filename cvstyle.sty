@@ -12,7 +12,7 @@
 %% Page and paragraph settings
 \pagestyle{empty}             % Remove page numbers
 \setlength{\parindent}{0pt}   % Remove paragraph indentation
-\setstretch{1.2}              % Set line spacing
+\setstretch{1.15}              % Set line spacing
 \setlist[itemize]{            % Custom list spacing
 	leftmargin=3.5em, 
 	noitemsep, 
@@ -33,6 +33,18 @@
 \titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{14pt}{12pt}
 
+
+%% ------------------------- BIBLIOGRAPHY ---------------------------
+\usepackage[
+	backend=biber, 
+	style=numeric, 
+	sorting=ydnt, 
+	url=false, 
+	isbn=false,
+	maxbibnames=99,
+	eprint=false
+]{biblatex}
+\addbibresource{publications.bib}
 
 %% ------------------------ CUSTOM COMMANDS -------------------------
 %% Command to bold my name in citations

@@ -4,6 +4,11 @@
 
 \usepackage{cvstyle}
 
+
+\usepackage{biblatex}
+\addbibresource{publications.bib} % Name of your .bib file [Overleaf](https://ko.overleaf.com/learn/latex/Bibliography_management_with_biblatex)
+
+
 \begin{document}
 
 
@@ -16,7 +21,7 @@
 \end{center}
 
 
-%% ---------------------------------- HEADER ----------------------------------
+%% -------------------------------- EDUCATION ---------------------------------
 \section{Education}
 
 \textbf{Ph.D. in Statistics} \hfill Expected May 2029 \\
@@ -30,20 +35,22 @@
     \item National Merit Scholar
 \end{itemize}
 
-% --- RESEARCH & PROFESSIONAL EXPERIENCE ---
+
+%% ---------------------- RESEARCH & PROFESSIONAL EXPERIENCE ------------------
 \section{Research \& Professional Experience}
 
 \textbf{Graduate Statistics Intern} \hfill May 2025 -- Present \\
 \tab Sandia National Laboratories, \textit{Albuquerque, NM}
 \begin{itemize}
-    \item Add 1-2 bullet points describing your spatial statistics work and its impact on the ESTCP project goals
+	\item Developed statistical machine learning models to forecast extreme temperatures at subseasonal (2--8 weeks out) timescales across the contiguous United States.
+	\item Evaluated and developed various dimension reduction techniques to extract predictive features from 40+ years of atmospheric data to be used as inputs for temperatures forecasting.
 \end{itemize}
 
 \vspace{6pt}
 \textbf{Financial Data Analytics Intern} \hfill May 2024 -- Aug 2024 \\
 \tab Williams International, \textit{Pontiac, MI}
 \begin{itemize}
-    \item Created a statistical model to forecast inventory using historical production and usage patterns.
+    \item Created statistical models to forecast inventory using historical production and usage data.
     \item Developed an anomaly detection program to monitor and identify deviations in expenses, detecting unusual spending patterns and potential fraud across business units.
     \item Automated forecasting and anomaly detection processes, reducing manual oversight and providing executives with actionable insights.
 \end{itemize}
@@ -56,25 +63,28 @@
     \item Developed new subsampling methods in R to speed up computation of Gaussian Process calculations for large spatial data.
 \end{itemize}
 
-% --- PUBLICATIONS ---
-\section{Publications}
-% Note: As your CV grows, you will want to replace this hard-coded list with a .bib file using BibTeX!
-\begin{itemize}
-    \item Heaton, M.J., \textbf{Johnson, J.A.} "Minibatch Markov Chain Monte Carlo Algorithms for Fitting Gaussian Processes." \textit{Bayesian Analysis}. Advance Publication 1-23, 2024. \url{https://doi.org/10.1214/24-BA1459}.
-    \item \textbf{Johnson, J.A.}, Heaton, M.J., Christensen, W.F. et al. "Fusing Climate Data Products Using a Spatially Varying Autoencoder." \textit{JABES} (2024). \url{https://doi.org/10.1007/s13253-024-00657-3}.
-\end{itemize}
 
-% --- HONORS & AWARDS ---
-\section{Honors \& Awards}
+%% ----------------------------- PUBLICATIONS ---------------------------------
+\section{Publications}
+\nocite{*} 
+\printbibliography[heading=none] 
+
+
+%% ----------------------------- AWARDS & HONORS ------------------------------
+\section{Awards \& Honors}
 \begin{itemize}
     \item UW-Madison Statistics Department Outstanding Performance as a TA award \hfill 2024 -- 2025
     \item ASA Section on Statistics and the Environment Student Paper Competition Winner \hfill 2024
 \end{itemize}
 
-% --- PRESENTATIONS ---
+
+%% ------------------------------ PRESENTATIONS -------------------------------
 \section{Presentations}
 \textbf{Oral Presentations}
 \begin{itemize}
+	\item "Modeling Bayesian Transport Map Uncertainty for Non-Gaussian Spatial Data via Laplace Approximation." Joint Statistical Meetings (JSM), Nashville, TN. August 2025.
+	\item "Climate Data Melding via Spatially varying Bayesian Autoencoder." Joint Statistical Meetings (JSM), Portland, OR. August 2024.
+	\item "Minibatch Markov chain Monte Carlo Algorithms for Fitting Gaussian Processes." CPMS Student Research Conference, Provo, UT. February 2024.
     \item "Climate Data Melding via Spatially varying Bayesian Autoencoder." Joint Statistical Meetings (JSM), Toronto, ON. August 2023.
     \item "Climate Data Melding via Spatially varying Bayesian Autoencoder." CPMS Student Research Conference, Provo, UT. February 2023.
 \end{itemize}
@@ -82,10 +92,12 @@
 \vspace{4pt}
 \textbf{Poster Presentations}
 \begin{itemize}
+	 \item "Minibatch Markov chain Monte Carlo Algorithms for Fitting Gaussian Processes." ENVR Workshop, Boulder, CO. October 2024.
     \item "Climate Data Melding via Spatially varying Bayesian Autoencoder." ENVR Workshop, Provo, UT. October 2022.
 \end{itemize}
 
-% --- TEACHING EXPERIENCE ---
+
+%% ---------------------------- TEACHING EXPERIENCE ---------------------------
 \section{Teaching Experience}
 \textbf{Teaching Assistant}, \textit{University of Wisconsin-Madison} \hfill Fall 2024 -- Present
 \begin{itemize}
@@ -99,10 +111,13 @@
     \item STAT 240 - Probability and Inference I (Fall 2021, Spring 2022)
 \end{itemize}
 
-% --- TECHNICAL SKILLS ---
-\section{Technical Skills}
+
+%% ------------------------------ TECHNICAL SKILLS ----------------------------
+\section{Skills}
 \begin{itemize}
-    \item \textbf{Languages \& Tools:} R, Python, SQL, Linux shell processes.
+    \item \textbf{Technical:} R, Python, SQL, Linux shell processes.
+    \item \textbf{Technical:} \textbf{Languages:} English (Native), Spanish (Fluent).
 \end{itemize}
+
 
 \end{document}
